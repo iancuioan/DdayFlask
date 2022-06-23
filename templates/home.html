@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+      <div style="padding: 10px; border: 2px solid black; border-radius: 5px; height: 600px; text-align: center;
+			font-family: 'Happy Monkey', cursive;
+			background: linear-gradient(skyblue, red);
+			color: #ffffff;">
+      <form action="{{ url_for('home') }}" method = "POST">
+      	
+      	<input type="text" name="name" placeholder="Who's birthday?">
+      	<input type="submit" value="Submit">
+      </form>
+      </div>
+</body>
+</html>

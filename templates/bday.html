@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dday</title>
+	<style type="text/css">
+		body {
+			text-align: center;
+			font-family: 'Happy Monkey', cursive;
+			background: linear-gradient(skyblue, red);
+			color: #ffffff;
+		}
+		h1, h2, h3, h4, p {
+			text-shadow: 0 0 1px black;
+		}
+		
+		#bday-age {
+			background: lightgreen;
+			padding: 5px 10px;
+			border-radius: 5px;
+			margin: 5px 0 10px 0;
+		}
+		
+		#header {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.gift-section {
+			display: flex;
+			flex-direction: column;
+			margin-top: 50px;
+		}
+		.gift-title {
+			margin-bottom: 10px;
+		}
+		.gift-img {
+			margin: 0 auto;
+			width: 250px;
+			height: 200px;
+			border: 6px solid white;
+			border-radius: 10px;
+			background-size: cover;
+		}
+		#hot-img:hover {
+			background-image: url("https://i.gifer.com/embedded/download/BMnt.gif");
+		}
+		#comic-img:hover {
+			background-image: url("https://blog.hubspot.com/hubfs/Smiling%20Leo%20Perfect%20GIF.gif")
+		}
+		#genius-img:hover {
+			background-image: url("https://kappadelta.org/wp-content/uploads/2016/04/genius.-gif.gif")
+		}
+		#badass-img:hover {
+			background-image: url("https://c.tenor.com/2M0tgmbQxiwAAAAC/elon-musk-badass.gif")
+		}
+	</style>
+</head>
+<body>
+	<div style="padding: 10px; border: 2px solid black; border-radius: 5px; height: 100%;">
+	  
+    <div id="header">
+    	
+    	<h1>Ziua "Z". Ziua lui <span style="color: red;">{{name}}</span> !!!</h1>
+    	<h2 id="bday-age">'Z' primaveri!!!<small>(18 ???)</small> {{ azi }}</h2>
+        
+    </div>
+    <h2 class="gift-title">{{ name }} este 'BOSS of GANG' !!!</h2>
+    <div class="gift-section">
+    	<div class="gift-img" id="hot-img"><p>Cand apare {{ name }}...</p></div>
+    	<div class="gift-img" id="comic-img"><p>Wow...</p></div>
+    	<div class="gift-img" id="genius-img"><p>E Geniu...</p></div>
+    	<div class="gift-img" id="badass-img"><p>E Cool...</p></div>
+    	<div><iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+             </iframe></div>
+        </div>
+    <h2 id="footer" style="color: lawngreen;">La multi ani {{ name }} !!!</h2>
+    
+    </div>
+</body>
+</html>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 from datetime import datetime, date
 
 azi = date.today()
@@ -6,13 +6,22 @@ azi = date.today()
 app = Flask(__name__)
 app.secret_key = "asecretkey"
 
+
 @app.route('/', methods=['POST','GET'])
 def home():
+
     name = request.form.get('name')
     if name != None:
-    	return render_template('bday.html', name=name, azi=azi)
-	
+        return render_template('bday.html', name=name, azi=azi)
+    
     return render_template("home.html")
+
+@app.route('/<name>', methods=['POST','GET'])
+def bday(name):
+
+    return render_template('bday.html', name=name, azi=azi)
+    
+    
 
 
 
